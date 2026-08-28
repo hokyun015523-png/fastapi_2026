@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <title>인사</title>
+</head>
+<body>
+    <h1>안녕하세요, {{ name }}님! </h1>
+
+    <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
