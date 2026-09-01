@@ -1,0 +1,15 @@
+{# home_library_v4/templates/shelf.html - base.html상속받는다 - 서재 보기 #}
+{% extends "base.html" %}
+{% block title %}서재 보기{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">등록된 책 ({{ shelf_items|length }}권)</h2>
+
+<div class="row row-cols-2 row-cols-md-4 g-4">
+
+    {% for item in shelf_items %}
+
+    {% endfor %}
+</div>
+
+{% endblock %}
